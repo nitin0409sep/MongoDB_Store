@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 mongoose.set('strictQuery', false)
 
-const DB = "mongodb+srv://admin:admin@cluster0.syhlsm9.mongodb.net/dynamicWeb?retryWrites=true&w=majority";
+const DB = "mongodb+srv://<userName>:<password>@cluster0.syhlsm9.mongodb.net/dynamicWeb?retryWrites=true&w=majority";
 
 mongoose.connect(DB).then(() => {
     console.log("Connection Successfull");
