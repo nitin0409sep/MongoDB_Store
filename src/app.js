@@ -76,6 +76,7 @@ app.post('/contact', async (req, res) => {
 app.get('**', (req, res) => {
     res.redirect('/');
 })
+
 app.listen(port, () => {
     console.log(`Server has started successfully at port:${port}`);
 })
